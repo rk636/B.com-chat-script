@@ -1,13 +1,13 @@
 :root {
     --primary-color: #3498db;
     --secondary-color: #BC6C25;
-    --background-color: linear-gradient(to right, #283618, #343a40);
+    --background-color: linear-gradient(to right, #007113, #003a95);
     --sidebar-width: 300px;
     --text-dark: #2c3e50;
     --text-light: #ffffff;
     --border-radius: 8px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --script-header-bck: linear-gradient(to right, #2980b9, #BC6C25);
+    --script-header-bck: linear-gradient(to right, #007113, #003a95);
     --background-default: linear-gradient(to right, #283618, #343a40);
 }
 
