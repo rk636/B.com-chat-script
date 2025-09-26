@@ -51,6 +51,8 @@
                 <button id="opening-nav" class="nav-btn active">Chat flow</button>
                 <button id="helpful-statements-nav" class="nav-btn" style="display: none;">Helpful Statements</button>
                 <button id="closing-nav" class="nav-btn">Closing</button>
+                <button id="support-nav" class="nav-btn active">Support</button>
+                <button id="baggage-seating-nav" class="nav-btn active">Baggage/seating</button>
                 <button id="hold-nav" class="nav-btn">Hold</button>
                 <button id="payment-nav" class="nav-btn">Payment</button>
                 <button id="objections-nav" class="nav-btn">Handling Objections</button>
@@ -66,6 +68,7 @@
                 <button id="csat-scripts-nav" class="nav-btn">C-Sat Scripts</button>
                 <button id="freeflow-nav" class="nav-btn">Freeflow Notes</button>
                 <button id="errands-nav" class="nav-btn">Errands Note</button>
+                                
             </nav>
 
             <div class="sections-container">
@@ -221,7 +224,7 @@
                         </div>
                         <div class="section-scripts">
                             <div class="script-card">
-                                May I know whichof the following flight you would like to reschedule? 
+                                May I know whichof the following flight you would like to reschedule?
                                 <span class="manual-edit" data-default-text="[Flights]" onclick="enableTextEdit(this)">[Flights]</span>
                             </div>
                             <div class="section-scripts">
@@ -560,6 +563,32 @@
                                 I’m sorry you are having this problem. Let’s see what I can do to solve this for you.  
                             </div>
                         </div>
+                        <div class="section-headers">
+                            <h3>Successfully handled any request on the chat (Sent Invoice, Cancellation done, Rebooking done, Wheelchair added, Seating added, Baggage added etc).</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                Thank you for waiting. I am pleased to inform you that I have successfully arranged for the rescheduling of your travel plans. I enjoyed assisting you today and I wish to express my apologies for the extended time it took to address your rebooking request. I am appreciative of your patience and understanding.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>I have tried multiple times but unable to make booking on your website.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                We apologize you're experiencing booking difficulties. Please try clearing your browser's cache and cookies, or using a different browser. If the problem persists, please send us and email with details of any error messages you've encountered. We'll be happy to assist you directly.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Can you waive off the airlines fee.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I do really apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>  and I would really like to help you with that. However, the airline has the fee and we are not authorize to waive that.
+                                Whether you can waive an airline cancellation fee depends. Generally, flexible fares allow cancellations without fees. Certain circumstances, like significant flight changes made by the airline, illness (with documentation), or death in the family, might warrant a waiver.
+                                We recommend you to contact the airline directly and explain your situation. They might be able to waive off the fee.
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!--Closing-->
@@ -701,6 +730,70 @@
                             <div class="script-card">
                                 No problem at all, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>. 
                                 Please note the payment will expire after 30 minutes. You may contact us again when you're ready to make the payment so we can send you the new link.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Booking timed out, Payment deducted from passenger card.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                Thank you for your patience. I completely understand your concern regarding the email stating that your reservation did not go through, despite being charged. Upon checking, I can confirm that there are no fees associated with this reservation. Since you've already received confirmation from us that the reservation has not been finalized, I will follow up with our dedicated team regarding the preauthorized charges for a refund. In the meantime, I highly recommend checking with your bank for further clarification.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Passenger frustrated, booking did not go through and payment has been deducted.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I completely understand that you were hoping to secure a ticket, and I truly wish I could process it for you. However, the reservation did not go through due to the airline's specific procedures and technical requirements. Additionally, ticket prices fluctuate based on available seats and fares. Therefore, the system can only pre-authorize the charge, which will be refunded back to you.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Why booking is still pending, I have not received the confirmation yet (Order Pending, Less than 10 hourd ago)</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Your booking is likely pending due to a few common reasons. It could be processing delays with the airline or payment authorization issues with your bank. We recommend checking your email (including spam/junk folders) for any messages requesting further action. If the status doesn't update in sometime or you require urgent assistance, please contact our customer support team once again. We'd really love to assist you
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Why booking is still pending, I have not received the confirmation yet (Order Pending, More than 10 hourd ago) >> Agent will get the jira raised as per shelf</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Your booking is likely pending due to a few common reasons. It could be processing delays with the airline or payment authorization issues with your bank. / need to send this request to our Expert team. We recommend checking your email (including spam/junk folders) for any messages requesting further action. If the status doesn't update in sometime or you require urgent assistance, please contact our customer support team once again. We'd really love to assist you
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Why booking is still pending, I have not received the confirmation yet (Shopping status), Passenger money got deducted</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Your booking is likely pending due to a few common reasons. It could be processing delays with the airline or payment authorization issues with your bank. We recommend checking your email (including spam/junk folders) for any messages requesting further action. If the status doesn't update in sometime or you require urgent assistance, please contact our customer support team once again. We'd really love to assist you.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Why booking is still pending, I have not received the confirmation yet (Price Change)</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Flight prices fluctuate due to real-time flight seats demand. You likely saw a price that was available at the time of your initial search, but it wasn't secured until the booking was finalized and payment confirmed. If the price changed between your search and booking completion, it means the fare class you initially saw was no longer available and the system updated to the next available fare, often at a higher price. You can accept the changes or you can leave this order and it will get cancelled automatically. I sincerely apologize for the inconvenience and trouble.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Why booking is still pending, I have not received the confirmation yet (Pending Provider) Passenger contacted within 72 hours of booking made</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Your booking is likely pending due to a few common reasons. It could be processing delays with the airline or payment authorization issues with your bank. The majority of the bookings get confirmed within a few minutes but in some rare case scenarios, due to the airlines' processes and technical requirements, it may take more than 12 hours to confirm their booking. We recommend checking your email (including spam/junk folders) for any messages requesting further action. If the status doesn't update in sometime or you require urgent assistance, please contact our customer support team once again. We'd really love to assist you.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>I just made the booking, Why booking has been cancelled (Technical Issue)</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, Due to an unforeseen technical issue, affecting your flight booking, your flight has been cancelled. We understand this is disruptive. While we're working to resolve the problem, we don't have specifics on the exact nature of the issue publicly available. However, it likely involves an error in processing confirmations, inventory management, or payment issues. We apologize for the inconvenience, we are also prioritizing affected booking passengers and we have already initiated the refund from our end. I sincerely apologize for the inconvenience and trouble.
                             </div>
                         </div>
                     </div>
@@ -975,6 +1068,37 @@
                                 After this date, changes may not be allowed or additional airline fees may apply.
                             </div>
                         </div>
+                        <div class="section-headers">
+                            <h3>Payment received, proceeding with rebooking.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>
+                                Great news - your payment has been received! We're now processing the changes, and our ticketing team will send your updated ticket to your email shortly. You can expect to receive it as soon as possible. 
+                                If there's anything you need in the meantime, feel free to reach out.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Rebooking not permitted, Cancellation and refund alternative available.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                According to the airline rules, the ticket is not eligible for rebooking?<br>
+                                However, I have Good news! Your ticket permits cancellation. We'd love to assist you in cancellation of your trip so you don't lose this opportunity to get refund and you can make a new booking online with best available prices. Let's take the advantage of this opportunity to refund your money back under the same mode of payment.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Rebooking permitted, we are not getting price (This script can also be used in void and rebooking in which we may not get price to rebook (Eg, RB fares) but passenger is eligible for void).</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Regrettably, we are not getting confirmed prices and availability from the airlines for rebooking?
+                                However, I have Good news! Your ticket permits cancellation. We'd love to assist you in cancellation of your trip so you don't lose this opportunity to get refund and you can make a new booking online with best available prices. 
+                                Let's take the advantage of this opportunity to refund your money back under the same mode of payment.
+                            </div>
+                        </div>
+
+                    </div>
                     </div>
                 </section>
                 <!--Change End-->
@@ -1080,8 +1204,15 @@
                                 <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>
                                 Please take into consideration that due to increased volumes it might take some time until you receive a response.
                             </div>
-                        </div>                          
-                    </div>
+                        </div> 
+                        <div class="section-headers">
+                            <h3>Passenger contacted again as rebooking not done which was requested on previous chat/call and we found the queue due to under collect/fare hike.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, Mr. Smith. Regrettably, your rebooking request was not processed due to a change in price. We have tried to rebook your ticket with the previous agreed price. However, I would like to inform you, prices are dynamic and depend on seat and fare availability: at the moment, the fare for the date and time you choose is higher than the ticket originally paid for and varies according to the restrictions and terms and conditions of the fare class booked.
+                            </div>
+                        </div>
                 </section>
                 <!--Handling Objections END-->
                 <!-- C-Sat Section Start-->
@@ -1334,6 +1465,15 @@
                                 Would you like us to proceed with canceling your booking and submitting a refund request to the airline?
                             </div>
                         </div>
+                        <div class="section-headers">
+                            <h3>Ticket is nonrefundable, Rebooking alternative available.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                According to the airline rules, the ticket, including any add-on products (such as baggage, seats, meals) or fees, is non-refundable. However, part of the taxes can be refunded through the airline. Would you like me to cancel your booking and contact the airline to refund the taxes?
+                                Also I have Good news! Your ticket permits changes. We'd love to assist you in rebooking your trip to a different date so you don't lose your ticket. Would you like me to explore the option of changing your flight, or would you still prefer to cancel your booking?
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!--Schedule Change-->
@@ -1494,11 +1634,63 @@
                                 <span class="manual-edit" data-default-text="[XXXX]" onclick="enableTextEdit(this)">[XXXX]</span> 
                                 for a swifter resolution. 
                                 We truly appreciate your business
+                            </div>   
+                        </div>
+                        <div class="section-headers">
+                            <h3>Passenger was looking to speak with someone in different language (General Scripts)</h3>
+                        </div> 
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I understand you would like to speak to somebody in Brazil but I assure you I have the authority to answer all your questions. I don't want you to have to hold and I don't want to create false hope. I will have the same answer for you that you will hear from someone in brazil language, I will make sure you will get the resolution as expected
+                            </div>   
+                        </div>
+                        <div class="section-headers">
+                            <h3>While taking more than usual time to handle any request.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                It was my pleasure assisting you today and I sincerely apologize that it took some time to complete rebooking. I truly appreciate your patience with me. It was a pleasure to have assisted you today.
+                            </div>   
+                        </div>
+                        <div class="section-headers">
+                            <h3>Passenger worried as unable to check booking details on airlines website.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I appreciate your patience! I was able to retrieve your booking without any issues using the information below and rest assured there are no issues with your flight.
+                            </div>
+                            <div class="script-card">
+                                As the ticket owner is Finnair, it is unlikely that your tickets will be retrievable on the American Airlines website. However, upon further review regarding the check-in you mentioned, it appears that it is necessary to complete with American Airlines.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Passenger unable to check booking details on airlines website and we are also unable to check booking details on airlines website.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I am so sorry to keep you waiting! I have tried to investigate your issue via the airline website but it seems I am getting the same error as you. I know that this may seem worrying to you but please be assured that your booking is confirmed and ready to go on our system and it could simply be an issue with the airline website as it won't go through even with the ticket number. I suggest it would be best to contact the airline directly for further assistance with the check-in. You may use the information below for your easy reference:
+                            </div>
+                            <div class="script-card">
+                                I apologize for the delay. I have attempted to investigate your issue through the airline website, but it appears I am encountering the same error as you. I understand that this may be concerning; however, please be assured that your booking is confirmed and present in our system. It is possible that there is an issue with the airline's website. I recommend contacting the airline directly for further assistance with the check-in.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>I am able to retrieve booking on the airlines website but unable to check in</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I would love to help you with the steps <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span><br>
+                                Here are the steps for online check in for <span class="manual-edit" data-default-text="[Airline name]" onclick="enableTextEdit(this)">[Airline name]</span> :<br>
+                                Step 1-Kindly go to the airlines website <span class="manual-edit" data-default-text="[link for check in ]" onclick="enableTextEdit(this)">[link for check in ]</span><br>
+                                Step 2 - Enter your Booking reference PNR: <span class="manual-edit" data-default-text="[PNR]" onclick="enableTextEdit(this)">[PNR]</span> First Name and Last Name exactly as in your ticket <br>
+                                Step 3 - Then you have to click on the Confirm or Submit button<br>
+                                Step 4-A new page will generate where you need to complete all the required information and your boarding pass will be generated.<br>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!--General Scripts END-->
+
                 <!--Errands Notes-->
                 <section id="errands-section" class="interaction-section">
                     <div class="twin-form-box">
@@ -1608,6 +1800,70 @@
                     </div>
                 </section>
                 <!-- More sections can be added similarly -->
+                <!--Support Scripts-->
+                <section id="support-section" class="interaction-section">
+                    <div class="section-grid">
+                        <div class="section-headers">
+                            <h3>Sending Case to support team</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                Thank you for waiting,<span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>. Upon checking,. I am sending your request to our specialize team. They will reach out to you as soon as possible, via call or email.
+                                While we do not have a specific timeline, since the team will work on your case and once they complete your request, they will update you via call or email as soon as possible.<br>
+                                Please verify that following are your correct email address and your best contact number.<br>
+                                Contact Number - <span class="manual-edit" data-default-text="[Registered contact number]" onclick="enableTextEdit(this)">[Registered contact number]</span><br>
+                                Email Address- <span class="manual-edit" data-default-text="[Email address]" onclick="enableTextEdit(this)">[Email address]</span>
+                            </div>
+                            <div class="script-card">
+                                <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>
+                                We have tagged this urgent so our team will contact you as soon as possible.
+                            </div>
+                            <div class="script-card">
+                                <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>
+                                I understand your concern, and I'd really love to help you with the cancellation/rebooking in your flight, however since there is a dedicated team that work on these scenarios, I need to send this request to our Support Expert Team who will get in touch with you to assist you better
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Already on support, Long time</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>
+                                I really wanted to expedite the process however, we have specific team who is working on your request. I sincerely apologize that it is taking more time to complete request. Rest assure this will be handled as fast as we could.
+                            </div>
+                        </div>
+                        <div class="section-headers">
+                            <h3>Schedule change, Refund and Rebooking authorization pending with the airlines.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span>. I have gone through your booking and see that your case is already under our expert team. We totally get how frustrating it can be when things take longer than expected, and we're really sorry if this delay has caused any inconvenience to you. This case needs to be handled by our relevant team to coordinate with the airline. Hence, we kindly request you to wait for the meantime and once we have this sorted with the airline, one from our team will update you via phone call or email.
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                <!--Support Scripts END-->
+
+                <!--Baggage/Seating Scripts-->
+                 <section id="baggage-seating-section" class="interaction-section">
+                    <div class="section-grid">
+                        <div class="section-headers">
+                            <h3>Looking to add baggage and seating. However, we are unable to add it.</h3>
+                        </div>
+                        <div class="section-scripts">
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . Unfortunately, we are unable to accommodate additional baggage or seating requests at this time. However, If you exceed your baggage allowance applicable fees can be paid at the airport.
+                            </div>
+                            <div class="script-card">
+                                I sincerely apologize, <span class="manual-edit" data-default-text="[Cx Name]" onclick="enableTextEdit(this)">[Cx Name]</span> . I would love to assist you with your seating in your flight, however since we have limited access to your reservation, and the airline has control over the ticket thus we're unable to proceed. You will have to reach out to the airline for this request.
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+
+
+                <!--Support Scripts END-->
+
             </div>
         </main>
         <!-- Tooltip -->
